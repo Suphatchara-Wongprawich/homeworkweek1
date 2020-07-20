@@ -26,7 +26,6 @@ private fun addNickname(view: View) {
 
     nicknameTextView.text = editText.text
     editText.visibility = View.GONE
-    editText.visibility = View.GONE
     nicknameTextView.visibility = View.VISIBLE
 
     // Hide the keyboard.
