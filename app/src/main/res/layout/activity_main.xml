@@ -44,8 +44,11 @@
             style="@style/NameStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text=""
             android:textAlignment="center"
-            android:visibility="gone" />
+            android:paddingBottom="@dimen/small_padding"
+            android:visibility="gone"
+            android:background="@color/colorAccent" />
 
         <ImageView
             android:id="@+id/star_image"
