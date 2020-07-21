@@ -29,6 +29,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.doneButton.setOnClickListener {
             addNickname(it)
+
+            binding.apply {
+                myName?.nickname = nicknameEdit.text.toString()
+                invalidateAll()
+                ...
+            }
         }
 
 
@@ -48,7 +54,7 @@ private fun addNickname(view: View) {
     val nicknameTextView = findViewById<TextView>(R.id.nickname_text)
 
     binding.apply {
-        nicknameText.text = nicknameEdit.text.toString()
+        myName?.nickname = nicknameEdit.text.toString()
         nicknameEdit.visibility = View.GONE
         doneButton.visibility = View.GONE
         nicknameText.visibility = View.VISIBLE
