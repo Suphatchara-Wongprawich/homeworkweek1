@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.done_button).setOnClickListener {
             addNickname(it)
+
     }
         findViewById<TextView>(R.id.nickname_text).setOnClickListener {
             updateNickname(it)
